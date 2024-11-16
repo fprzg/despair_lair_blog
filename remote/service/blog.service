@@ -1,0 +1,22 @@
+[Unit]
+Description=Jekyll-powered blog service
+
+After=network-online.target
+Wants=network-online.target
+
+StartLimitIntervalSec=600
+StartLimitBurst=5
+
+[Service]
+Type=exec
+User=pruebitas
+Group=pruebitas
+EnvironmentFile=/etc/environment
+WorkingDirectory=/home/pruebitas
+ExecStart=/home/pruebitas/Code/despair_lair_blog/run.sh
+
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.agent
