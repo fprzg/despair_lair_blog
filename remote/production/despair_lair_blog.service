@@ -1,5 +1,5 @@
 [Unit]
-Description=Jekyll-powered blog service
+Description=Despair Lair Blog (powered by Jekyll)
 
 After=network-online.target
 Wants=network-online.target
@@ -13,7 +13,7 @@ User=pruebitas
 Group=pruebitas
 EnvironmentFile=/etc/environment
 WorkingDirectory=~/Code/despair_lair_blog
-ExecStart=~/.local/share/rubies/ruby-3.3.6/bin/bundle exec jekyll serve
+ExecStart=/usr/local/bin/bundle exec jekyll serve --host=0.0.0.0 --port=4100
 
 Restart=on-failure
 RestartSec=5

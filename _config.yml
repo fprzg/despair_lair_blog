@@ -21,11 +21,11 @@
 title: The Despair Lair
 email: info@fprzg.net
 description: >- # this means to ignore newlines until "baseurl:"
-  Blog about programming and tech.
+  Blog about programming and technology.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "blog.fprzg.net" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: fprzg
-github_username:  n3cr0k4n1n4
+twitter_username: n3cr0k4n1n4
+github_username:  fprzg
 
 # Build settings
 theme: minima
