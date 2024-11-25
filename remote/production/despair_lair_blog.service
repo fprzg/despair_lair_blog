@@ -12,11 +12,11 @@ Type=exec
 User=pruebitas
 Group=pruebitas
 EnvironmentFile=/etc/environment
-WorkingDirectory=/home/pruebitas
-ExecStart=/home/pruebitas/Code/despair_lair_blog/run.sh
+WorkingDirectory=~/Code/despair_lair_blog
+ExecStart=~/.local/share/rubies/ruby-3.3.6/bin/bundle exec jekyll serve
 
 Restart=on-failure
 RestartSec=5
 
 [Install]
-WantedBy=multi-user.agent
+WantedBy=multi-user.target
